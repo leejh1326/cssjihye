@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="kr">
+<title>jihye lee css</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--viewport 얘는 일반적으로 복붙..-->
+<!-- 얘가 그 아래의 페이스북 인스타 이미지 가져오는 링크 -->
+
+<!-- CSS에서 가능하지만 간단하게 여기서 처리가능..! -->
+<!-- a가 들어가있는 것은 사이드바의 링크들 -->
+<!-- .fa 는 맨아래 페이스북 같은 곳 스타일임 -->
+<!-- media는 600px보다 작아지면 디스플레이하지 말아라! -->
+<style>
+    .half img {
+        margin-bottom: -6px;
+        margin-top: 16px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+    .half img:hover {
+        opacity: 1
+    }
+
+
+    a:link {
+        color: rgba(255, 189, 66, 0.699);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(255, 110, 13);
+    }
+
+    a:visited {
+        color: rgba(255, 196, 0, 0.932);
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 50px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    @media (max-width: 600px) {
+        #side {
+            display: none;
+        }
+
+        .main {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- 왼쪽 사이드 메뉴:네비게이션 -->
+    <div id="side">
+        <nav class="sidebar colorname" style="width:180px; font-weight:bold;">
+
+            <div class="bar-block">
+                <a href="#int">interests</a> <br>
+                <a href="#edu">education</a> <br>
+                <a href="#works">works</a> <br>
+                <a href="#con">contact</a> <br>
+            </div>
+        </nav>
+    </div>
+
+    <!-- 페이지 상단 -->
+    <div class="main" style="margin-left:200px; margin-right:40px;">
+        <h2 class="caption"> welcome to my world of work & life </h2>
+
+        <!-- 관심사 -->
+        <div class="bigbox" style="margin-top:0px;">
+            <h1 class="jumbo"><b>이지혜 </b></h1>
+            <h1 class="xxxlarge colorname" id="interests"><b>🌸interests</b></h1>
+            <hr style="width:40%; border:5px solid black; float: left; clear: both; "> <br>
+        </div>
+
+        <!-- 사진 -->
+        <div class="imgpadding">
+            <div class="half">
+                <img src="cat.gif" style="width:100%" alt="cat">
+                <img src="coffee.jpg" style="width:100%" alt="커피">
+                <img src="hi.gif" style="width:100%" alt="휴식">
+            </div>
+
+            <div class="half">
+                <img src="snoopy.jpg" style="width:100%" alt="캐릭터">
+                <img src="eight.jpg" style="width:100%" alt="노래">
+                <img src="python.png" style="width:100%" alt="파이썬">
+            </div>
+        </div>
+
+        <!-- cat & work-->
+        <div class="bigbox" id="edu" style="margin-top:70px">
+            <h1 class="xxxlarge colorname"><b>🐱Cat & work</b></h1>
+            <hr style="width:40%; border:5px solid black; float: left; clear: both; "> <br>
+            <p><b>I love cats.</b></p>
+            <p>Our family cannot raise a cat because of the health of our family. That's why I'm living the life of an online butler who watches cat YouTube every day. The channels I often watch are 'Kim Meju and Cats' and 'Haha ha'. Even the calm, cheerful cat's daily life is enjoyable, but it makes you smile when you see the humorous part that sometimes comes out. Take a look at it at least once. You could be a online butler, too.
+            </p>
+            <p>I am living a busy life because of midterm exams and assignments. There are still alternative tasks left, and it is also busier to participate in weekly web programming sungshin study group. It's hard due to a rush of tasks, but I'm enjoying my life because I feel a sense of accomplishment when I'm done.</p>
+        </div>
+
+        <!-- 2020 -->
+        <div class="bigbox" id="works" style="margin-top:75px">
+            <h1 class="xxxlarge"><b>🔥class</b></h1>
+            <hr style="width:40%; border:5px solid black; float: left; clear: both; "> <br>
+            <p>저의 2020년 수강중인 과목은 다음과 같습니다</p>
+            <p>Web programing, 미적분과 벡터해석 기초, IT개론, python programing, 비판적 사고와 토론, 기초 통계학
+            </p>
+            <p><b>저의 첫학기는 위의 과목을 수강하고 있습니다. 앞으로 7학기가 남았습니다.</b></p>
+        </div>
+
+
+
+        <!-- 연락처 -->
+        <div class="bigbox" id="con" style="margin-top:70px">
+            <h1 class="xxxlarge"><b>🌠contact</b></h1>
+            <hr style="width:40%; border:5px solid black; float: left; clear: both; "> <br>
+            <ul class="contact-info">
+                <li>+82 010-9308-0000</li>
+                <li><a href="mailto:20200949@sungshin.ac.kr">20200949@sungshin.ac.kr</a></li> <br>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/explore" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/easy_hye_00/" class="fa fa-instagram"></a>
+
+
+
+                <footer>
+                    <p class="credit">
+                        Copyright &copy; All rights reserved | by JihyeLee 2020 </p>
+                    <!-- &copy;얘는 특수문자 -->
+                </footer>
+
+
+
+
+</body>
+
+</html>
